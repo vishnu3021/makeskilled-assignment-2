@@ -4,6 +4,11 @@ b='madhu'
 print(type(a),type(b))
 
 #Check - palindrome 
-
-print(a==a[::-1])  # 'radara' == 'radara' - true
-print(b==b[::-1])   # 'madhu' == 'uhdam' - false
+if a==a[::-1]:
+    print(a + ' is a palindrome')
+else:
+    print(a + ' is not palindrome')
+    if b==b[::-1]:
+        print(b + ' is a palindrome')
+    else:
+        print(b + ' is not palindrome')
